@@ -25,12 +25,12 @@ public class ApplicationSolutionsPageTest {
 
 	@Test(groups={"smoke"})
 	@Parameters({"wood","metal","masonry","concrete"})
-	public void verifyButtonTextValuesUnderDrilling(String wood, String metal, String masonary, String concrete){
+	public void verifyButtonTextValuesUnderDrilling(String wood, String metal, String masonry, String concrete){
 		
 		ApplicationSolutions.hoverOverDrilling();
 		Assert.assertEquals(ApplicationSolutions.getBtnTextInsideDrillingTile("wood"), wood);
 		Assert.assertEquals(ApplicationSolutions.getBtnTextInsideDrillingTile("metal"), metal);
-		Assert.assertEquals(ApplicationSolutions.getBtnTextInsideDrillingTile("masonary"), masonary);
+		Assert.assertEquals(ApplicationSolutions.getBtnTextInsideDrillingTile("masonry"), masonry);
 		Assert.assertEquals(ApplicationSolutions.getBtnTextInsideDrillingTile("concrete"), concrete);
 		
 	}

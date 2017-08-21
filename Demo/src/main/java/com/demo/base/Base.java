@@ -20,6 +20,7 @@ public class Base {
 	public static WebDriver Instance = null;
 
 	public static void Initialize() {
+	
 
 		if (Instance == null) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/driver/chromedriver.exe");
