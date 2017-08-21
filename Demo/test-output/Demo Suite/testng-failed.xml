@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Demo Suite]">
+  <parameter name="masonry" value="MASONRY"/>
+  <parameter name="concrete" value="CONCRETE"/>
+  <parameter name="metal" value="METAL"/>
+  <parameter name="wood" value="WOOD"/>
+  <listeners>
+    <listener class-name="com.demo.listener.Listener"/>
+  </listeners>
+  <test name="verifyButtonTextValuesUnderDrilling(failed)">
+    <parameter name="masonry" value="MASONRY"/>
+    <parameter name="concrete" value="CONCRETE"/>
+    <parameter name="metal" value="METAL"/>
+    <parameter name="wood" value="WOOD"/>
+    <classes>
+      <class name="com.demo.test.ApplicationSolutionsPageTest">
+        <methods>
+          <include name="verifyButtonTextValuesUnderDrilling"/>
+          <include name="Setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.demo.test.ApplicationSolutionsPageTest -->
+    </classes>
+  </test> <!-- verifyButtonTextValuesUnderDrilling(failed) -->
+</suite> <!-- Failed suite [Demo Suite] -->
